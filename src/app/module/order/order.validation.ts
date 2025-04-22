@@ -24,7 +24,7 @@ const createOrderValidationSchema = z.object({
 
 const updateOrderStatusValidationSchema = z.object({
   body: z.object({
-    deliverystatus: z.enum(['pending', 'shipping']).optional(),
+    deliveryStatus: z.enum(['pending', 'shipping']).optional(),
     isDeleted: z.boolean().optional(),
   }),
 });
